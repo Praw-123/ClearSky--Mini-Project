@@ -66,11 +66,14 @@ npx expo start
 
 1. สมัครบัญชีฟรีที่ [openweathermap.org](https://openweathermap.org)
 2. คัดลอก API Key จากหน้า My API Keys
-3. เปิดไฟล์ `App.js` แล้วแทนที่บรรทัดนี้
+3. คัดลอกไฟล์ `.env.example` เป็นไฟล์ใหม่ชื่อ `.env`
+4. ใส่ API Key ของคุณลงในไฟล์ `.env`
 
-```javascript
-const API_KEY = 'ใส่ API Key ของคุณตรงนี้';
 ```
+EXPO_PUBLIC_OWM_API_KEY=ใส่ API Key ของคุณตรงนี้
+```
+
+> ไฟล์ `.env` จะไม่ถูก commit ขึ้น Git (อยู่ใน `.gitignore` แล้ว)
 
 ---
 

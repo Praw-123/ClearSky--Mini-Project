@@ -2,7 +2,8 @@
 // แยกออกมาเพื่อให้ไฟล์อื่น import ไปใช้ได้ง่าย
 
 // API Key จาก OpenWeatherMap
-export const API_KEY = 'ad044ee78deb31ddecbccf79c9af4d07';
+// อ่านจาก .env (ตัวแปรต้องขึ้นต้นด้วย EXPO_PUBLIC_ ถึงจะถูกฝังเข้า bundle ได้ - Expo SDK 49+)
+export const API_KEY = process.env.EXPO_PUBLIC_OWM_API_KEY;
 
 // ฟังก์ชันคืนค่าสีพื้นหลังตามสภาพอากาศ
 // รับ weatherMain เช่น 'Clear', 'Rain', 'Clouds'
